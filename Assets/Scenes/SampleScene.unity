@@ -423,8 +423,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play Again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -558,8 +558,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Restart
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb888c3349a12843afaabf5f5a2e122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objPool: {fileID: 1801603670}
+  objPool: {fileID: 8316656296201660449, guid: 6b7c58a8554d6f14ba4c0fb078425fc6, type: 3}
   exObjPool: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
   enemyPool: {fileID: 2756219073872000358, guid: 79ec5379508ece345b7de9d83aa0dfd0, type: 3}
 --- !u!82 &1356891421
@@ -1727,11 +1727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728976371}
   m_CullTransparentMesh: 1
---- !u!1 &1801603670 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8316656296201660449, guid: 6b7c58a8554d6f14ba4c0fb078425fc6, type: 3}
-  m_PrefabInstance: {fileID: 135935700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1801603671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8316656296201660453, guid: 6b7c58a8554d6f14ba4c0fb078425fc6, type: 3}
@@ -1827,8 +1822,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over !!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

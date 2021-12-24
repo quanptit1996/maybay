@@ -175,5 +175,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objPool: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
-  exObjPool: {fileID: 0}
-  enemyPool: {fileID: 0}
+  exObjPool: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
+  enemyPool: {fileID: 2756219073872000358, guid: 79ec5379508ece345b7de9d83aa0dfd0, type: 3}
