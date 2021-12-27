@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class ObjectPool : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class ObjectPool : MonoBehaviour
     private int _amountToPool = 8;
     [SerializeField] private GameObject objPool;
     [SerializeField] private GameObject exObjPool;
-    [SerializeField] private GameObject enemyPool;
+    [SerializeField] private List<GameObject> enemyPool = new List<GameObject>() ;
 
+    private bool _isRandom = true;
     private void Awake()
     {
         if (instance == null)
@@ -41,7 +43,9 @@ public class ObjectPool : MonoBehaviour
         }
         for (int i = 0 ; i < _amountToPool; i++)
         {
-            GameObject obj = Instantiate(enemyPool);
+            int index = _isRandom ? UnityEngine.Random.Range(0, enemyPool.Count) : 0;
+            GameObject obj = Instantiate(enemyPool[index]);
+          //  Debug.Log("AAAA");
             obj.SetActive(false);
             _poolEnemy.Add(obj);
         }

@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 8316656296201660454}
   - component: {fileID: 8316656296201660455}
   - component: {fileID: 8316656296201660448}
-  - component: {fileID: 8395965727720455880}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -162,18 +161,3 @@ MonoBehaviour:
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
   dead: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 3}
   _rg: {fileID: 8316656296201660455}
---- !u!114 &8395965727720455880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316656296201660449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bb888c3349a12843afaabf5f5a2e122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objPool: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
-  exObjPool: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
-  enemyPool: {fileID: 2756219073872000358, guid: 79ec5379508ece345b7de9d83aa0dfd0, type: 3}

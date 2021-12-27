@@ -11,10 +11,12 @@ public class Mover : MonoBehaviour
    public GameObject explosion;
    public GameObject dead;
   [SerializeField] private Rigidbody _rg;
+ 
   
    private void Awake()
    {
        _rg = GetComponent<Rigidbody>();
+
        
    }
 
@@ -59,6 +61,7 @@ public class Mover : MonoBehaviour
            Instantiate(dead, transform.position, transform.rotation);
            GameController.instance._restart = true;
            GameController.instance.GameOver();
+           
        }
    }
 

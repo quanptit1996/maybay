@@ -20,19 +20,28 @@ namespace _Scrip
         public float cloneWait;
         
         /*-------UI Text ---------------*/
-        public TextMeshProUGUI gameoverText;
+        public GameObject gameOverOOO;
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI restartText;
-        private int _score;
+        public int _score = 0;
         private bool _gameover;
         public bool _restart;
+        
+        public TextMeshProUGUI currentScore;
+        public TextMeshProUGUI highScore;
+
+       //private HighScore _highScore;
+        
         private void Start()
         {
             _score = 0;
             scoreText.text = "Score: 0";
-            gameoverText.gameObject.SetActive(false);
+            gameOverOOO.gameObject.SetActive(false);
             restartText.gameObject.SetActive(true); 
             StartCoroutine(Waves());
+            highScore.text = PlayerPrefs.GetInt("highscore").ToString();
+           
+           
         }
         private void Awake()
         {
@@ -40,6 +49,9 @@ namespace _Scrip
             {
                 instance = this;
             }
+            //_highScore = GetComponent<HighScore>();
+
+
         } 
 
         private void Update()
@@ -81,11 +93,19 @@ namespace _Scrip
         {
             _score += score;
             scoreText.text = "Score: " + _score;
-        }
+        } 
 
         public void GameOver()
         {
-            gameoverText.gameObject.SetActive(true);
+            gameOverOOO.gameObject.SetActive(true);
+            //_highScore.UpdateHighscore();
+            currentScore.text = _score.ToString();
+            if (_score > PlayerPrefs.GetInt("highscore"))
+            {
+               
+                PlayerPrefs.SetInt("highscore",_score);
+                highScore.text =_score.ToString();
+            }
         }
 
         public void Restart()
